@@ -1,0 +1,6 @@
+Width: 205. Aspect Ratio: 60. Diameter: 15. 
+The approximate volume is 39.92 liters
+2022-01-15 18:00:15.414723
+Width: 185. Aspect Ratio: 50. Diameter: 14. 
+The approximate volume is 24.09 liters
+2022-01-15 18:00:25.371041
