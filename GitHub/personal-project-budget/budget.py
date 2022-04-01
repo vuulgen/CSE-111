@@ -1,6 +1,7 @@
 import csv
 import os
 import sys
+import datetime
 
 class Application():
     def __init__(self):
@@ -94,52 +95,39 @@ class Application():
             print('You have broken even, you are spending exactly as much as you make.')
         if valoutput > 0:
             print('You are in the positive, you have a surplus of ' + '$' + str(valoutput))
-        # save_input = input('Would you like to save your income and expenses to a file? [y/n]: ')
-        another = input('Would you like to run another analysis? [y/n]: ')
-        if another == 'y':
+        save_input = input('Would you like to save your income and expenses to a file? [y/n]: ')
+        # another = input('Would you like to run another analysis? [y/n]: ')
+        if save_input == 'y':
             self.append_file()
+            self.close_program
 
         else:
-            self.append_file()
             self.close_program()
         
 
 
-    def reset_program(self):
-        self.append_file()
-        self.income = 0
-        self.expenses = 0
-        del self.expense_list[0:]
-        del self.expense_name[0:]
-        del self.income_name[0:]
-        del self.income_list[0:]
-        self.prompt_income()
+    # def reset_program(self):
+    #     self.append_file()
+    #     self.income = 0
+    #     self.expenses = 0
+    #     del self.expense_list[0:]
+    #     del self.expense_name[0:]
+    #     del self.income_name[0:]
+    #     del self.income_list[0:]
+    #     self.prompt_income()
 
     def append_file(self):
-        save_input = input('Would you like to save your income and expenses to a file? [y/n]: ')
+        date = datetime.datetime.now()
+        with open("budget_data.txt", "a") as f:
+                f.write(f'As of {date}: \n')
+                f.write(f'\n    Name: {self.income_name}, Income: {self.income_list}\n')
+                f.write(f'  Name: {self.expense_name}, Expense: {self.expense_list}\n')
+                f.write(f'  Total Income: {self.income}, Total Expenses: {self.expenses}\n')
+                f.write(f'  Total Value: {self.income - self.expenses}')
+                f.write(f'\n')
+                print('Your data has been saved to budget_data.txt')
+                print('Exiting Program.')
 
-        while save_input == 'y':
-            #(Example) # lines_to_add = ['Additional line nr 1\n', 'Additional line nr 2\n']
-            with open("budget_data.txt", "a+") as f:
-                f.writelines(f'Name: {self.income_name}, Income: {self.income_list}')
-                f.writelines(f'Name: {self.expense_name}, Expense: {self.expense_list}')
-                f.writelines(f'Total Income: {self.income}, Total Expenses: {self.expenses}')
-                f.writelines(f'Total Value: {self.income - self.expenses}')
-                f.writelines(f'\n')
-        self.reset_program()
-
-
-                
-            #(CSV file eperiment) # with open('budget_data.csv', 'w', newline='') as csvfile:
-            #     writer = csv.writer(csvfile, delimiter=',')
-            #     writer.writerow(['Income', 'Expenses'])
-            #     writer.writerow([self.income, self.expenses])
-
-        if save_input == 'no':
-
-            self.reset_program()
-
-       
 
     def close_program(self):
         print('Exiting Program.')

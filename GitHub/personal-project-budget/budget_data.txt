@@ -1,0 +1,3 @@
+As of 2022-04-01 15:44:50.020596 
+
+ Name: ['Stipend', 'Plasma donation'], Income: [350, 30]Name: ['Groceries'], Expense: [40]Total Income: 380, Total Expenses: 40Total Value: 340
