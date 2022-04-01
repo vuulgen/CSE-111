@@ -1,12 +1,26 @@
-As of 2022-04-01 16:17:25.033160 
-
- Name: ['Hookers and Blow', 'pimping'], Income: [7, 50]
-Name: ['yur mom'], Expense: [40]
-Total Income: 57, Total Expenses: 40
-Total Value: 17
 As of 2022-04-01 16:33:36.876433 
 
  Name: ['Savings', 'Investments'], Income: [2500, 200]
 Name: ['Car: O ring repair', 'Groceries', 'soda'], Expense: [150, 40, 1]
 Total Income: 2700, Total Expenses: 191
 Total Value: 2509
+As of 2022-04-01 16:37:24.490372: 
+
+    Name: ['Work Hours', 'Cookies'], Income: [79, 3]
+  Name: ['New car'], Expense: [79898]
+  Total Income: 82, Total Expenses: 79898
+  Total Value: -79816
+
+As of 2022-04-01 16:43:19.467517: 
+
+    Name: ['Testing', 'Investments'], Income: [2500, 500]
+  Name: ['Bills'], Expense: [1790]
+  Total Income: 3000, Total Expenses: 1790
+  Total Value: 1210
+
+As of 2022-04-01 16:43:34.870677: 
+
+    Name: ['Testing', 'Investments'], Income: [2500, 500]
+  Name: ['Bills'], Expense: [1790]
+  Total Income: 3000, Total Expenses: 1790
+  Total Value: 1210

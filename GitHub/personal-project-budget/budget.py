@@ -119,7 +119,7 @@ class Application():
     def append_file(self):
         date = datetime.datetime.now()
         with open("budget_data.txt", "a") as f:
-                f.write(f'As of {date}: \n')
+                f.write(f'\nAs of {date}: \n')
                 f.write(f'\n    Name: {self.income_name}, Income: {self.income_list}\n')
                 f.write(f'  Name: {self.expense_name}, Expense: {self.expense_list}\n')
                 f.write(f'  Total Income: {self.income}, Total Expenses: {self.expenses}\n')
