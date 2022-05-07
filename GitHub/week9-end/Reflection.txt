@@ -1,0 +1,24 @@
+Please respond thoroughly (at least two sentences for each question) to
+the following three questions.
+
+1. Describe an experience you had this semester where you saw the power of
+functions.
+
+One of the biggest things I realized with functions from this semester would be my realization that you can do anything with the right combination of math and well designed functions. I especially realized this with our Molar mass calculator and the program that would calculate the volume of air a car wheel could take.
+It helped me think about the programing that goes into video games. I realized the function for a character to perform an act was carefully planned out then executed through a series of math equations and functions, the more code and functions added the more complex your program can become. But complexity is not always the best, as I have also learned, I need to just stick with what I know works and understand and build from there.
+
+
+
+2. In your judgment, what is the value of test functions?
+
+By myself, I think it is pointless. But if I were in a group it would be an invaluable asset. It is basically just a way to check your math. This function when add A and B should equal C, otherwise this functions fails the test and does not work the way it is intended.
+I say this because I usually don’t need to check my math, especially in a separate program with the added complicated pytest. I usually test my function before I add it or change it. 
+
+
+3. Describe your process for troubleshooting and fixing a program that
+has a problem. What is one thing you can do to improve your process?
+
+I would put in set variables and see if it would work. If that fails I would then make a separate file or some other similar instance where I would solely check and inspect the function and seek the issue. If that would then fail I would rewrite my program from the beginning, I would pay close attention to each function leading up to the issue being sure that they are all compatible with each other. I would test each function and the whole program as I went and find the root of the problem. After I follow this corse of action I have either figured out and fixed or replaced the problem, or once I rewrote the program it was magically fixed.
+I don’t really have a better alternative for debugging. I made this process after consulting with Brother Birch and other advanced programers.
+
+
